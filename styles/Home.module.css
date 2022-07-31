@@ -114,6 +114,138 @@
   height: 1em;
 }
 
+.bkgBlack {
+  background-color: #000 !important;
+}
+
+.clrWhite {
+  color: #fff;
+}
+
+.home {
+  height: 100vh;
+  padding-top: 10vh;
+  /*background-image: url("../static/bkgHomeImage.png");*/
+  /*background-repeat: no-repeat;*/
+  /*background-size: cover;*/
+  background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url("../static/bkgHomeImage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cases {
+  padding-top: 10vh;
+}
+
+.cases img {
+  width: 100% !important;
+}
+
+.mentions {
+  padding-top: 84px;
+  border-top: 1px solid #687363;
+  margin: auto;
+}
+
+.mentionsRow1 {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.mentionsRow1 ul {
+  display: flex;
+}
+
+.mentionsRow1 li {
+  margin: 0 50px;
+}
+
+.connect {
+  padding-top: 84px;
+  border-top: 1px solid #687363;
+  margin: auto;
+}
+
+.connect a {
+  color: #494FF2;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.letsConnect {
+
+}
+
+.card {
+  min-height: 735px;
+  border: none;
+  border-radius: 0;
+}
+
+.card:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.bkgTrip {
+  background-color: #4F594A;
+}
+.bkgTrip:hover {
+  background-color: #4F594A;
+}
+
+.bkgRoom {
+  background-color: #236282;
+}
+.bkgRoom:hover {
+  background-color: #236282;
+}
+
+.bkgFurnish {
+  background-color: #507B6D;
+}
+.bkgFurnish:hover {
+  background-color: #507B6D;
+}
+
+.bkgAuto {
+  background-color: #019388;
+}
+.bkgAuto:hover {
+  background-color: #019388;
+}
+
+.bkgBank {
+  background-color: #6EC446;
+}
+.bkgBank:hover {
+  background-color: #6EC446;
+}
+
+.bkgKids {
+  background-color: #F56F6F;
+}
+.bkgKids:hover {
+  background-color: #F56F6F;
+}
+
+.marginBottom24 {
+  margin-bottom: 24px;
+}
+
+.marginBottom64 {
+  margin-bottom: 64px;
+}
+
+.marginBottom120 {
+  margin-bottom: 120px;
+}
+
+.center {
+  margin: auto;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
