@@ -90,6 +90,10 @@
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
+  max-height: 640px;
+  min-height: 640px;
+  border: none;
+  border-radius: 0;
 }
 
 .card:hover,
@@ -155,10 +159,20 @@
 
 .mentionsRow1 ul {
   display: flex;
+  width: 100%;
+  justify-content: space-around;
 }
 
 .mentionsRow1 li {
-  margin: 0 50px;
+  /*margin: 0 50px;*/
+}
+
+.imageTop {
+  padding-top: 32px !important;
+}
+
+.buttonLeft {
+  margin-left: 15px;
 }
 
 .connect {
@@ -175,12 +189,6 @@
 
 .letsConnect {
 
-}
-
-.card {
-  min-height: 735px;
-  border: none;
-  border-radius: 0;
 }
 
 .card:hover {

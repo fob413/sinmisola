@@ -1,5 +1,4 @@
 import React from "react";
-import Head from 'next/head';
 import Image from "next/image";
 import styles from '../styles/Home.module.css'
 import NavBar from "../components/navbar";
@@ -18,9 +17,9 @@ const cases = [
     id: 1,
     title: 'Plan an Exclusive Trip',
     content: `
-        Want to plan a trip with your family?<br/>
-        Want to explore a new country?<br/>
-        WONDERLAND can help with that.<br/>
+        Want to plan a trip with your family?
+        Want to explore a new country?
+        WONDERLAND can help with that.
         Let's help you plan your trip with ease.
     `,
     color: 'bkgTrip',
@@ -30,9 +29,9 @@ const cases = [
     id: 2,
     title: 'Book a Room',
     content: `
-        Welcome to Lagos!<br/>
-        Need an Hotel to stay? Can't reach out<br/>
-        to anyone?<br/>
+        Welcome to Lagos!
+        Need an Hotel to stay? Can't reach out
+        to anyone?
         Feel free to book a room via our app.
     `,
     color: 'bkgRoom',
@@ -42,9 +41,9 @@ const cases = [
     id: 3,
     title: 'Home Furnishing App',
     content: `
-        COZA Online Furniture Store<br/>
-        helps you find exactly what you<br/>
-        want without the hassles of too<br/>
+        COZA Online Furniture Store
+        helps you find exactly what you
+        want without the hassles of too
         much traffic and crowded stores.
     `,
     color: 'bkgFurnish',
@@ -54,9 +53,9 @@ const cases = [
     id: 4,
     title: 'Auto Call',
     content: `
-        Your car breakdown? Oh my goodness.<br/>
-        We are here to fix it. You can now call<br/>
-        a mechanic around your vicinity and say<br/>
+        Your car breakdown? Oh my goodness.
+        We are here to fix it. You can now call
+        a mechanic around your vicinity and say
         goodbye to road embarrassments.
     `,
     color: 'bkgAuto',
@@ -66,9 +65,9 @@ const cases = [
     id: 5,
     title: 'The Bank Sterling',
     content: `
-        Banking can definitely be made easy<br/>
-        transactions can be done from your<br/>
-        comfort zone. Do not let anything<br/>
+        Banking can definitely be made easy
+        transactions can be done from your
+        comfort zone. Do not let anything
         stop you now.
     `,
     color: 'bkgBank',
@@ -78,9 +77,9 @@ const cases = [
     id: 6,
     title: 'Independent Kids',
     content: `
-        Don't you just love kids? Children like<br/>
-        having a sense of independence and that<br/>
-        is why we are here to tell you that you can<br/>
+        Don't you just love kids? Children like
+        having a sense of independence and that
+        is why we are here to tell you that you can
         reward them for doing chores via our App.
     `,
     color: 'bkgKids',
@@ -128,8 +127,8 @@ export default function Home() {
         <Container maxWidth='xl'>
 
           <Grid item xs={12}>
-            <Typography variant='h5' className={styles.clrWhite} textAlign='center'>
-              Designing and<br/>improving Products<br/>& User Experiences
+            <Typography variant='h4' className={styles.clrWhite} textAlign='center'>
+              Designing and improving<br/>Products & User Experiences
             </Typography>
           </Grid>
 
@@ -141,17 +140,21 @@ export default function Home() {
                     <Grid item direction='column' alignItems='center' xs={12} md={6} className={styles.marginBottom120} key={id}>
                       <Card className={`${styles[color]} ${styles.clrWhite} ${styles.card}`}>
                         <CardContent>
-                          <Typography variant='h5' gutterBottom>
+                          <Typography variant='h4' gutterBottom>
                             {title}
                           </Typography>
 
                           <Typography variant='body1' dangerouslySetInnerHTML={{__html: content}} />
 
-                          <Image src={image}/>
+                          <Image
+                            src={image} layout={'responsive'} className={styles.imageTop}
+                            size={"(max-height: 50px)"} placeholder={'blur'} objectFit={'contain'}
+                            height={250}
+                          />
                         </CardContent>
                       </Card>
 
-                      <Button variant='contained' size='large' className={`${styles[color]} ${styles.clrWhite}`}>Case Study</Button>
+                      <Button variant='contained' size='large' className={`${styles[color]} ${styles.clrWhite} ${styles.buttonLeft}`}>Case Study</Button>
                     </Grid>
                   )
               })
