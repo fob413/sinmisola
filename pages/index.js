@@ -23,7 +23,8 @@ const cases = [
         Let's help you plan your trip with ease.
     `,
     color: 'bkgTrip',
-    image: tripImage
+    image: tripImage,
+    link: 'https://medium.com/@olusinmi98'
   },
   {
     id: 2,
@@ -35,7 +36,8 @@ const cases = [
         Feel free to book a room via our app.
     `,
     color: 'bkgRoom',
-    image: roomImage
+    image: roomImage,
+    link: 'https://medium.com/@olusinmi98'
   },
   {
     id: 3,
@@ -47,7 +49,8 @@ const cases = [
         much traffic and crowded stores.
     `,
     color: 'bkgFurnish',
-    image: furnishImage
+    image: furnishImage,
+    link: 'https://medium.com/@olusinmi98/case-study-creating-a-better-furnishing-and-shopping-experience-f6edba401017'
   },
   {
     id: 4,
@@ -59,7 +62,8 @@ const cases = [
         goodbye to road embarrassments.
     `,
     color: 'bkgAuto',
-    image: autoImage
+    image: autoImage,
+    link: 'https://medium.com/@olusinmi98'
   },
   {
     id: 5,
@@ -71,7 +75,8 @@ const cases = [
         stop you now.
     `,
     color: 'bkgBank',
-    image: bankImage
+    image: bankImage,
+    link: 'https://medium.com/@olusinmi98'
   },
   {
     id: 6,
@@ -83,7 +88,8 @@ const cases = [
         reward them for doing chores via our App.
     `,
     color: 'bkgKids',
-    image: kidsImage
+    image: kidsImage,
+    link: 'https://medium.com/@olusinmi98'
   },
 
 ]
@@ -135,7 +141,7 @@ export default function Home() {
           <Grid container xs={12} spacing={6}>
 
             {
-              cases.map(({ title, content, id, color, image}) => {
+              cases.map(({ title, content, id, color, image, link}) => {
                   return (
                     <Grid item direction='column' alignItems='center' xs={12} md={6} className={styles.marginBottom120} key={id}>
                       <Card className={`${styles[color]} ${styles.clrWhite} ${styles.card}`}>
@@ -154,7 +160,7 @@ export default function Home() {
                         </CardContent>
                       </Card>
 
-                      <Button variant='contained' size='large' className={`${styles[color]} ${styles.clrWhite} ${styles.buttonLeft}`}>Case Study</Button>
+                      <Button variant='contained' size='large' className={`${styles[color]} ${styles.clrWhite} ${styles.buttonLeft}`}><a href={link} target={'_blank'}>Case Study</a></Button>
                     </Grid>
                   )
               })
@@ -169,7 +175,7 @@ export default function Home() {
       <Grid
         container
         xs={12} md={10}
-        id="mentions"
+        id="about"
         className={`${styles.mentions} ${styles.marginBottom120}`}
       >
         <Container maxWidth='xl' className={styles.clrWhite}>
@@ -204,7 +210,7 @@ export default function Home() {
       <Grid
       container
       xs={10}
-      id='connect'
+      id='contact'
       className={`${styles.connect} ${styles.marginBottom120}`}
       >
         <Container maxWidth='xl' className={styles.clrWhite}>
