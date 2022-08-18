@@ -172,7 +172,7 @@
 }
 
 .buttonLeft {
-  margin-left: 15px;
+  margin-left: 15px !important;
 }
 
 .connect {
@@ -197,42 +197,42 @@
 }
 
 .bkgTrip {
-  background-color: #4F594A;
+  background-color: #4F594A !important;
 }
 .bkgTrip:hover {
   background-color: #4F594A;
 }
 
 .bkgRoom {
-  background-color: #236282;
+  background-color: #236282 !important;
 }
 .bkgRoom:hover {
   background-color: #236282;
 }
 
 .bkgFurnish {
-  background-color: #507B6D;
+  background-color: #507B6D !important;
 }
 .bkgFurnish:hover {
   background-color: #507B6D;
 }
 
 .bkgAuto {
-  background-color: #019388;
+  background-color: #019388 !important;
 }
 .bkgAuto:hover {
   background-color: #019388;
 }
 
 .bkgBank {
-  background-color: #6EC446;
+  background-color: #6EC446 !important;
 }
 .bkgBank:hover {
   background-color: #6EC446;
 }
 
 .bkgKids {
-  background-color: #F56F6F;
+  background-color: #F56F6F !important;
 }
 .bkgKids:hover {
   background-color: #F56F6F;
