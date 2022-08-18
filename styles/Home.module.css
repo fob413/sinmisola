@@ -247,7 +247,7 @@
 }
 
 .marginBottom120 {
-  margin-bottom: 120px;
+  margin-bottom: 120px !important;
 }
 
 .center {
