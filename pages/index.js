@@ -37,7 +37,7 @@ const cases = [
     `,
     color: 'bkgRoom',
     image: roomImage,
-    link: 'https://medium.com/@olusinmi98'
+    link: 'https://medium.com/@olusinmi98/interactive-chatting-experience-for-a-luxury-hotel-38f7643e411d'
   },
   {
     id: 3,
@@ -200,7 +200,7 @@ export default function Home() {
           <Grid item xs={12} className={styles.mentionsRow1}>
             <ul>
               <li><a href='https://twitter.com/olusinmisola' target='_blank'>TWITTER</a></li>
-              <li><a href='#' target='_blank'>DRIBBLE</a></li>
+              <li><a href='http://dribbble.com/Olusinmi' target='_blank'>DRIBBLE</a></li>
             </ul>
           </Grid>
         </Container>
