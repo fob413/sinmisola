@@ -27,7 +27,7 @@ const NavBar = () => {
     return {
       page,
       ref: useRef(null),
-      link: page == 'resume' ? 'https://drive.google.com/file/d/1oJXppzYdBwS0kXSBKgg4m6iUJr2booHk/view?usp=sharing' : ''
+      link: page == 'resume' ? 'https://drive.google.com/file/d/1JRaONeoTBhpzagPXVG3cNwSLfcNrxBzL/view?usp=share_link' : ''
     };
   });
 
