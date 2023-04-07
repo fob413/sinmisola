@@ -19,7 +19,7 @@ const pages = ['home', 'cases', 'resume', 'about', 'contact'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const cvs = [
-	'https://drive.google.com/file/d/1oJXppzYdBwS0kXSBKgg4m6iUJr2booHk/view?usp=sharing,
+	'https://drive.google.com/file/d/1oJXppzYdBwS0kXSBKgg4m6iUJr2booHk/view?usp=sharing',
 	'https://drive.google.com/file/d/1AK8j7ZVLqLUNfbcXmT2xnH00A1vQGK_V/view?usp=sharing'
 ];
 
