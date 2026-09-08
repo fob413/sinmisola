@@ -11,6 +11,7 @@ import furnishImage from '../static/furnish.png';
 import autoImage from '../static/auto.png';
 import bankImage from '../static/bank.png';
 import kidsImage from '../static/kids.png';
+import UnderConstructionImage from '../static/underConstruction.svg';
 
 const cases = [
   {
@@ -94,7 +95,7 @@ const cases = [
 
 ]
 
-export default function Home() {
+function _OldHome() {
   return (
     <Grid container>
       {/*navbar*/}
@@ -231,4 +232,17 @@ export default function Home() {
       </Grid>
     </Grid>
   )
+}
+
+export default function Home () {
+  return (
+    <div className={styles.underConstruction}>
+      <Image
+        src={UnderConstructionImage}
+        alt="Site Under Construction"
+        className={styles.underConstructionImage}
+        sizes="(max-width: 600px) 90vw, 500px"
+      />
+    </div>
+  );
 }

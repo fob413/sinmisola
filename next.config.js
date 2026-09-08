@@ -1,18 +1,6 @@
 module.exports = {
-  env: {
-
+  output: 'export',
+  images: {
+    unoptimized: true,
   },
-  experimental: {
-    images: {
-      unoptimized: true,
-    }
-  },
-  exportPathMap: async function (
-    defaultPathMap,
-    { dev, dir, outDir, distDir, buildId }
-  ) {
-    return {
-      '/': { page: '/' }
-    }
-  }
 }
